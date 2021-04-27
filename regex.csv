@@ -10,6 +10,7 @@ URI,^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?
 MasterCard,"/^5[1-5]\d{2}(\s?)(?:\d{4}\1){2}\d{4}/ OR ""mastercard"""
 AmEx,"/^3[4-7]\d{1,2}(\s?)\d{6}\1\d{5}$/ OR ""american express"" OR ""amex"""
 VISA,"/^4\d{3}(\s?)(?:\d{4}\1){2}\d{4}$/ OR ""visa"""
+Sort Code,/^(?!(?:0{6}|00-00-00))(?:\d{6}|\d\d-\d\d-\d\d)$/
 National Insurance Number,"^([a-zA-Z]){2}( )?([0-9]){2}( )?([0-9]){2}( )?([0-9]){2}( )?([a-zA-Z]){1}?$"
 Social Security Number,^(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}$
 Email  Address,^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$
